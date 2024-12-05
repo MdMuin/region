@@ -15,8 +15,10 @@ export class AppComponent implements OnInit {
       next: (countryCode) => {
         if (countryCode === 'IN') {
           this.router.navigate(['/in']);
-        } else if (countryCode === 'EU') {
+        } else if (countryCode === 'IE') {
           this.router.navigate(['/eu']);
+        } else {
+          this.router.navigate(['/in']);
         }
       },
       error: (err) => {
